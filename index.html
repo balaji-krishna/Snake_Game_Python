@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game (Brython)</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        h1 {
+            color: #FF0000;
+        }
+        #game-canvas {
+            background: #000;
+            display: block;
+            margin: 30px auto;
+            border: 2px solid #fff;
+        }
+        #score {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        #start-btn {
+            padding: 10px 30px;
+            font-size: 1.1em;
+            background: #FF0000;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #start-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython_stdlib.js"></script>
+</head>
+<body onload="brython()">
+    <h1>Snake Game (Brython)</h1>
+    <div id="score">Score: 0</div>
+    <canvas id="game-canvas" width="800" height="800"></canvas>
+    <br>
+    <button id="start-btn">Start Game</button>
+    <script type="text/python" src="main.py"></script>
+</body>
+</html>
